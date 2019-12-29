@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Zoneminder Hapi API",
   "author": "Steve Gilvarry",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib",
