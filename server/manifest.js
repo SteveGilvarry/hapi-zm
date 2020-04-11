@@ -3,6 +3,7 @@
 const Dotenv = require('dotenv');
 const Confidence = require('confidence');
 const Toys = require('toys');
+const Schwifty = require('schwifty');
 
 // Pull .env into process.env
 Dotenv.config({ path: `${__dirname}/.env` });
@@ -48,6 +49,9 @@ module.exports = new Confidence.Store({
                             useNullAsDefault: true,     // Suggested for sqlite3
                             connection: {
                                 filename: ':memory:'
+                            },
+                            migrations: {
+                                stub: Schwifty.migrationsStubPath
                             }
                         }
                     },
